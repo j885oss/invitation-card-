@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Let's Make Memories — Freshers Party</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="gate">
+    <div class="gate-card">
+      <p class="gate-eyebrow">You're invited</p>
+      <h1 class="gate-title script">Let's make memories</h1>
+      <p class="gate-sub">Before we open your invitation, tell us who's joining us.</p>
+      <form id="nameForm">
+        <input id="nameInput" type="text" placeholder="Enter your full name" required>
+        <button type="submit" class="gate-btn">Reveal My Invitation</button>
+      </form>
+      <p class="gate-note">A little music will play softly along with it 🎵</p>
+    </div>
+  </div>
+
+  <div id="main">
+    <p class="greeting script" id="greeting">Dear Guest,</p>
+    <div class="card-frame" id="cardFrame">
+      <img src="assets/invitation.jpg" alt="Freshers Party invitation card">
+    </div>
+    <div class="under-card">
+      <p class="script" style="font-size:1.5rem;">You're Invited! 💐</p>
+      <p>We would love to know who's joining us.</p>
+    </div>
+    <div class="actions">
+      <a class="btn btn-primary" href="#" id="rsvpBtn">RSVP / Enter Your Name</a>
+      <a class="btn btn-secondary" href="#" id="contactBtn">Contact Host</a>
+    </div>
+  </div>
+
+  <button id="musicToggle" title="Toggle music">🔊</button>
+
+  <div id="lightbox">
+    <img id="lightboxImg" src="" alt="Full invitation">
+  </div>
+
+  <!-- Drop your own licensed instrumental file at assets/song.mp3 — see README.md -->
+  <audio id="bgSong" src="assets/song.mp3" loop preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
